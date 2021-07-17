@@ -9,6 +9,7 @@
 <img width="250" src="./3주차.gif">
 
 ## 목표 👍🏻   
+
     1. Delegate로 DataPassing 해주어 데이터 전달
     
     2. TableView를 사용한 앱 만들기
@@ -40,6 +41,6 @@
 
 ## 기획 이외에 추가적으로 구현한 기능 👍🏻
 
-    1. CollectionView 이용하여 광고 배너 가로 스크롤 되도록 구현
+    1) CollectionView 이용하여 광고 배너 가로 스크롤 되도록 구현
     
-    2. PageControl과 CollectionView의 배너 이미지를 연결하여 PageControl 구현 
+    2) PageControl과 CollectionView의 배너 이미지를 연결하여 PageControl 구현 
