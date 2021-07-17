@@ -31,10 +31,12 @@
     
     4. TabBar 사용하여 탭 바에 구성된 화면 연결
 
+    5. 똑같은 화면을 보여주기 위해 앱의 로고 및 버튼을 따서 구성
+
 ## 사용된 Objects Library 👍🏻
 
-    1. UIButton, UILabel, UIImageView, UIView, PageControl, SearchBar
+    1) UIButton, UILabel, UIImageView, UIView, PageControl, SearchBar
     
-    2. StackView, ScrollView
+    2) StackView, ScrollView
     
-    3. TabBarController
+    3) TabBarController
