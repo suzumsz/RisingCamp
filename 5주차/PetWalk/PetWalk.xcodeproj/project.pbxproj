@@ -3,66 +3,90 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD33DDDE26A5348F007ECA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DDDD26A5348F007ECA95 /* AppDelegate.swift */; };
-		DD33DDE026A5348F007ECA95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DDDF26A5348F007ECA95 /* SceneDelegate.swift */; };
-		DD33DDE226A5348F007ECA95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DDE126A5348F007ECA95 /* ViewController.swift */; };
-		DD33DDE526A5348F007ECA95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD33DDE326A5348F007ECA95 /* Main.storyboard */; };
-		DD33DDE726A53490007ECA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD33DDE626A53490007ECA95 /* Assets.xcassets */; };
-		DD33DDEA26A53490007ECA95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD33DDE826A53490007ECA95 /* LaunchScreen.storyboard */; };
+		C6F7F380FD9CAEE11892111F /* Pods_PetWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB358DCC24193BE284FDBF7C /* Pods_PetWalk.framework */; };
+		DD33DE0C26A56FD6007ECA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */; };
+		DD33DE0E26A56FD6007ECA95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */; };
+		DD33DE1026A56FD6007ECA95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE0F26A56FD6007ECA95 /* ViewController.swift */; };
+		DD33DE1326A56FD6007ECA95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE1126A56FD6007ECA95 /* Main.storyboard */; };
+		DD33DE1526A56FD7007ECA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE1426A56FD7007ECA95 /* Assets.xcassets */; };
+		DD33DE1826A56FD7007ECA95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD33DDDA26A5348F007ECA95 /* PetWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD33DDDD26A5348F007ECA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD33DDDF26A5348F007ECA95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD33DDE126A5348F007ECA95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD33DDE426A5348F007ECA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD33DDE626A53490007ECA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD33DDE926A53490007ECA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DD33DDEB26A53490007ECA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B7607439F9DD3A6E0E87B0 /* Pods-PetWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.debug.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.debug.xcconfig"; sourceTree = "<group>"; };
+		46EE007A7A0CF0388D4A20E3 /* Pods-PetWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.release.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.release.xcconfig"; sourceTree = "<group>"; };
+		CB358DCC24193BE284FDBF7C /* Pods_PetWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD33DE0826A56FD6007ECA95 /* PetWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD33DE0F26A56FD6007ECA95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD33DE1226A56FD6007ECA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD33DE1426A56FD7007ECA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD33DE1726A56FD7007ECA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD33DE1926A56FD7007ECA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DD33DDD726A5348F007ECA95 /* Frameworks */ = {
+		DD33DE0526A56FD6007ECA95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F7F380FD9CAEE11892111F /* Pods_PetWalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD33DDD126A5348F007ECA95 = {
+		2A6C238822F126AF928FEC2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD33DDDC26A5348F007ECA95 /* PetWalk */,
-				DD33DDDB26A5348F007ECA95 /* Products */,
+				CB358DCC24193BE284FDBF7C /* Pods_PetWalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C69D53A70580D7CFF38A8CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17B7607439F9DD3A6E0E87B0 /* Pods-PetWalk.debug.xcconfig */,
+				46EE007A7A0CF0388D4A20E3 /* Pods-PetWalk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD33DDFF26A56FD6007ECA95 = {
+			isa = PBXGroup;
+			children = (
+				DD33DE0A26A56FD6007ECA95 /* PetWalk */,
+				DD33DE0926A56FD6007ECA95 /* Products */,
+				8C69D53A70580D7CFF38A8CF /* Pods */,
+				2A6C238822F126AF928FEC2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DD33DDDB26A5348F007ECA95 /* Products */ = {
+		DD33DE0926A56FD6007ECA95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD33DDDA26A5348F007ECA95 /* PetWalk.app */,
+				DD33DE0826A56FD6007ECA95 /* PetWalk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD33DDDC26A5348F007ECA95 /* PetWalk */ = {
+		DD33DE0A26A56FD6007ECA95 /* PetWalk */ = {
 			isa = PBXGroup;
 			children = (
-				DD33DDDD26A5348F007ECA95 /* AppDelegate.swift */,
-				DD33DDDF26A5348F007ECA95 /* SceneDelegate.swift */,
-				DD33DDE126A5348F007ECA95 /* ViewController.swift */,
-				DD33DDE326A5348F007ECA95 /* Main.storyboard */,
-				DD33DDE626A53490007ECA95 /* Assets.xcassets */,
-				DD33DDE826A53490007ECA95 /* LaunchScreen.storyboard */,
-				DD33DDEB26A53490007ECA95 /* Info.plist */,
+				DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */,
+				DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */,
+				DD33DE0F26A56FD6007ECA95 /* ViewController.swift */,
+				DD33DE1126A56FD6007ECA95 /* Main.storyboard */,
+				DD33DE1426A56FD7007ECA95 /* Assets.xcassets */,
+				DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */,
+				DD33DE1926A56FD7007ECA95 /* Info.plist */,
 			);
 			path = PetWalk;
 			sourceTree = "<group>";
@@ -70,13 +94,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD33DDD926A5348F007ECA95 /* PetWalk */ = {
+		DD33DE0726A56FD6007ECA95 /* PetWalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD33DDEE26A53490007ECA95 /* Build configuration list for PBXNativeTarget "PetWalk" */;
+			buildConfigurationList = DD33DE1C26A56FD7007ECA95 /* Build configuration list for PBXNativeTarget "PetWalk" */;
 			buildPhases = (
-				DD33DDD626A5348F007ECA95 /* Sources */,
-				DD33DDD726A5348F007ECA95 /* Frameworks */,
-				DD33DDD826A5348F007ECA95 /* Resources */,
+				5588CE03AA3F538937EC6F47 /* [CP] Check Pods Manifest.lock */,
+				DD33DE0426A56FD6007ECA95 /* Sources */,
+				DD33DE0526A56FD6007ECA95 /* Frameworks */,
+				DD33DE0626A56FD6007ECA95 /* Resources */,
+				3DC6AEF202C4A44BDF7077B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,24 +110,24 @@
 			);
 			name = PetWalk;
 			productName = PetWalk;
-			productReference = DD33DDDA26A5348F007ECA95 /* PetWalk.app */;
+			productReference = DD33DE0826A56FD6007ECA95 /* PetWalk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DD33DDD226A5348F007ECA95 /* Project object */ = {
+		DD33DE0026A56FD6007ECA95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					DD33DDD926A5348F007ECA95 = {
+					DD33DE0726A56FD6007ECA95 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = DD33DDD526A5348F007ECA95 /* Build configuration list for PBXProject "PetWalk" */;
+			buildConfigurationList = DD33DE0326A56FD6007ECA95 /* Build configuration list for PBXProject "PetWalk" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,55 +135,97 @@
 				en,
 				Base,
 			);
-			mainGroup = DD33DDD126A5348F007ECA95;
-			productRefGroup = DD33DDDB26A5348F007ECA95 /* Products */;
+			mainGroup = DD33DDFF26A56FD6007ECA95;
+			productRefGroup = DD33DE0926A56FD6007ECA95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD33DDD926A5348F007ECA95 /* PetWalk */,
+				DD33DE0726A56FD6007ECA95 /* PetWalk */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DD33DDD826A5348F007ECA95 /* Resources */ = {
+		DD33DE0626A56FD6007ECA95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD33DDEA26A53490007ECA95 /* LaunchScreen.storyboard in Resources */,
-				DD33DDE726A53490007ECA95 /* Assets.xcassets in Resources */,
-				DD33DDE526A5348F007ECA95 /* Main.storyboard in Resources */,
+				DD33DE1826A56FD7007ECA95 /* LaunchScreen.storyboard in Resources */,
+				DD33DE1526A56FD7007ECA95 /* Assets.xcassets in Resources */,
+				DD33DE1326A56FD6007ECA95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DC6AEF202C4A44BDF7077B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetWalk/Pods-PetWalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetWalk/Pods-PetWalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetWalk/Pods-PetWalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5588CE03AA3F538937EC6F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetWalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		DD33DDD626A5348F007ECA95 /* Sources */ = {
+		DD33DE0426A56FD6007ECA95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD33DDE226A5348F007ECA95 /* ViewController.swift in Sources */,
-				DD33DDDE26A5348F007ECA95 /* AppDelegate.swift in Sources */,
-				DD33DDE026A5348F007ECA95 /* SceneDelegate.swift in Sources */,
+				DD33DE1026A56FD6007ECA95 /* ViewController.swift in Sources */,
+				DD33DE0C26A56FD6007ECA95 /* AppDelegate.swift in Sources */,
+				DD33DE0E26A56FD6007ECA95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD33DDE326A5348F007ECA95 /* Main.storyboard */ = {
+		DD33DE1126A56FD6007ECA95 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD33DDE426A5348F007ECA95 /* Base */,
+				DD33DE1226A56FD6007ECA95 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DD33DDE826A53490007ECA95 /* LaunchScreen.storyboard */ = {
+		DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD33DDE926A53490007ECA95 /* Base */,
+				DD33DE1726A56FD7007ECA95 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,7 +233,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DD33DDEC26A53490007ECA95 /* Debug */ = {
+		DD33DE1A26A56FD7007ECA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		DD33DDED26A53490007ECA95 /* Release */ = {
+		DD33DE1B26A56FD7007ECA95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,8 +349,9 @@
 			};
 			name = Release;
 		};
-		DD33DDEF26A53490007ECA95 /* Debug */ = {
+		DD33DE1D26A56FD7007ECA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B7607439F9DD3A6E0E87B0 /* Pods-PetWalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,8 +369,9 @@
 			};
 			name = Debug;
 		};
-		DD33DDF026A53490007ECA95 /* Release */ = {
+		DD33DE1E26A56FD7007ECA95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EE007A7A0CF0388D4A20E3 /* Pods-PetWalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,25 +392,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD33DDD526A5348F007ECA95 /* Build configuration list for PBXProject "PetWalk" */ = {
+		DD33DE0326A56FD6007ECA95 /* Build configuration list for PBXProject "PetWalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD33DDEC26A53490007ECA95 /* Debug */,
-				DD33DDED26A53490007ECA95 /* Release */,
+				DD33DE1A26A56FD7007ECA95 /* Debug */,
+				DD33DE1B26A56FD7007ECA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD33DDEE26A53490007ECA95 /* Build configuration list for PBXNativeTarget "PetWalk" */ = {
+		DD33DE1C26A56FD7007ECA95 /* Build configuration list for PBXNativeTarget "PetWalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD33DDEF26A53490007ECA95 /* Debug */,
-				DD33DDF026A53490007ECA95 /* Release */,
+				DD33DE1D26A56FD7007ECA95 /* Debug */,
+				DD33DE1E26A56FD7007ECA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DD33DDD226A5348F007ECA95 /* Project object */;
+	rootObject = DD33DE0026A56FD6007ECA95 /* Project object */;
 }
