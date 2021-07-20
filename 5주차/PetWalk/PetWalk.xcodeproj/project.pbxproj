@@ -14,6 +14,11 @@
 		DD33DE1326A56FD6007ECA95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE1126A56FD6007ECA95 /* Main.storyboard */; };
 		DD33DE1526A56FD7007ECA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE1426A56FD7007ECA95 /* Assets.xcassets */; };
 		DD33DE1826A56FD7007ECA95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */; };
+		DD33DE2026A5C315007ECA95 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE1F26A5C315007ECA95 /* UserInfoVC.swift */; };
+		DD33DE2226A5CCD5007ECA95 /* DogInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2126A5CCD5007ECA95 /* DogInfoVC.swift */; };
+		DD33DE2426A68C01007ECA95 /* DogInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2326A68C01007ECA95 /* DogInfoRegisterVC.swift */; };
+		DD33DE2626A68EC5007ECA95 /* mainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2526A68EC5007ECA95 /* mainData.swift */; };
+		DD33DE2826A6CE9C007ECA95 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		DD33DE1426A56FD7007ECA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD33DE1726A56FD7007ECA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD33DE1926A56FD7007ECA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD33DE1F26A5C315007ECA95 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		DD33DE2126A5CCD5007ECA95 /* DogInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoVC.swift; sourceTree = "<group>"; };
+		DD33DE2326A68C01007ECA95 /* DogInfoRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRegisterVC.swift; sourceTree = "<group>"; };
+		DD33DE2526A68EC5007ECA95 /* mainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainData.swift; sourceTree = "<group>"; };
+		DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +90,28 @@
 		DD33DE0A26A56FD6007ECA95 /* PetWalk */ = {
 			isa = PBXGroup;
 			children = (
+				DD33DE2926A6D994007ECA95 /* ViewController */,
 				DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */,
 				DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */,
-				DD33DE0F26A56FD6007ECA95 /* ViewController.swift */,
+				DD33DE2526A68EC5007ECA95 /* mainData.swift */,
 				DD33DE1126A56FD6007ECA95 /* Main.storyboard */,
 				DD33DE1426A56FD7007ECA95 /* Assets.xcassets */,
 				DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */,
 				DD33DE1926A56FD7007ECA95 /* Info.plist */,
 			);
 			path = PetWalk;
+			sourceTree = "<group>";
+		};
+		DD33DE2926A6D994007ECA95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE0F26A56FD6007ECA95 /* ViewController.swift */,
+				DD33DE1F26A5C315007ECA95 /* UserInfoVC.swift */,
+				DD33DE2126A5CCD5007ECA95 /* DogInfoVC.swift */,
+				DD33DE2326A68C01007ECA95 /* DogInfoRegisterVC.swift */,
+				DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD33DE2626A68EC5007ECA95 /* mainData.swift in Sources */,
+				DD33DE2826A6CE9C007ECA95 /* HomeVC.swift in Sources */,
 				DD33DE1026A56FD6007ECA95 /* ViewController.swift in Sources */,
 				DD33DE0C26A56FD6007ECA95 /* AppDelegate.swift in Sources */,
+				DD33DE2426A68C01007ECA95 /* DogInfoRegisterVC.swift in Sources */,
 				DD33DE0E26A56FD6007ECA95 /* SceneDelegate.swift in Sources */,
+				DD33DE2026A5C315007ECA95 /* UserInfoVC.swift in Sources */,
+				DD33DE2226A5CCD5007ECA95 /* DogInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
