@@ -9,6 +9,7 @@ target 'PetWalk' do
   pod 'KakaoSDKCommon'  # 필수 요소를 담은 공통 모듈
   pod 'KakaoSDKAuth'  # 사용자 인증
   pod 'Alamofire', '~> 5.4'
+  pod 'SideMenu'
 
   # Pods for PetWalk
 

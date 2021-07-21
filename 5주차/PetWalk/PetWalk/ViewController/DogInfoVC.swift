@@ -53,15 +53,17 @@ class DogInfoVC: UIViewController {
  
     
     @IBAction func didTapBackBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func didTapNextPage(_ sender: Any) {
         
         guard let dvc = storyboard?.instantiateViewController(identifier: "DogInfoRegisterVC") as? DogInfoRegisterVC else {return}
         
-        self.modalPresentationStyle = .fullScreen
-        self.present(dvc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(dvc, animated: true)
+//        self.modalPresentationStyle = .fullScreen
+//        self.present(dvc, animated: true, completion: nil)
     }
     
     @IBAction func didSelectBoyBtn(_ sender: UIButton) {

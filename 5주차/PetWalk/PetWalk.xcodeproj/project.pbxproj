@@ -19,6 +19,15 @@
 		DD33DE2426A68C01007ECA95 /* DogInfoRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2326A68C01007ECA95 /* DogInfoRegisterVC.swift */; };
 		DD33DE2626A68EC5007ECA95 /* mainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2526A68EC5007ECA95 /* mainData.swift */; };
 		DD33DE2826A6CE9C007ECA95 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */; };
+		DD33DE2B26A70E31007ECA95 /* sideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2A26A70E30007ECA95 /* sideMenuViewController.swift */; };
+		DD33DE2D26A70FA7007ECA95 /* CustomSideMenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2C26A70FA7007ECA95 /* CustomSideMenuNavigation.swift */; };
+		DD33DE2F26A72939007ECA95 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE2E26A72939007ECA95 /* weather.swift */; };
+		DD33DE3126A7AE92007ECA95 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3026A7AE92007ECA95 /* WeatherService.swift */; };
+		DD33DE3326A7B5F7007ECA95 /* KeyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE3226A7B5F7007ECA95 /* KeyList.plist */; };
+		DD33DE3526A81336007ECA95 /* tabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3426A81336007ECA95 /* tabBarVC.swift */; };
+		DD33DE3A26A81621007ECA95 /* tabBarPageCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3826A81621007ECA95 /* tabBarPageCVCell.swift */; };
+		DD33DE3B26A81621007ECA95 /* tabBarPageCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE3926A81621007ECA95 /* tabBarPageCVCell.xib */; };
+		DD33DE3D26A819BA007ECA95 /* timerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3C26A819BA007ECA95 /* timerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,15 @@
 		DD33DE2326A68C01007ECA95 /* DogInfoRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoRegisterVC.swift; sourceTree = "<group>"; };
 		DD33DE2526A68EC5007ECA95 /* mainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainData.swift; sourceTree = "<group>"; };
 		DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DD33DE2A26A70E30007ECA95 /* sideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuViewController.swift; sourceTree = "<group>"; };
+		DD33DE2C26A70FA7007ECA95 /* CustomSideMenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuNavigation.swift; sourceTree = "<group>"; };
+		DD33DE2E26A72939007ECA95 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
+		DD33DE3026A7AE92007ECA95 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		DD33DE3226A7B5F7007ECA95 /* KeyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = KeyList.plist; sourceTree = "<group>"; };
+		DD33DE3426A81336007ECA95 /* tabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarVC.swift; sourceTree = "<group>"; };
+		DD33DE3826A81621007ECA95 /* tabBarPageCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarPageCVCell.swift; sourceTree = "<group>"; };
+		DD33DE3926A81621007ECA95 /* tabBarPageCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBarPageCVCell.xib; sourceTree = "<group>"; };
+		DD33DE3C26A819BA007ECA95 /* timerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +112,14 @@
 				DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */,
 				DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */,
 				DD33DE2526A68EC5007ECA95 /* mainData.swift */,
+				DD33DE2E26A72939007ECA95 /* weather.swift */,
+				DD33DE3026A7AE92007ECA95 /* WeatherService.swift */,
+				DD33DE3226A7B5F7007ECA95 /* KeyList.plist */,
 				DD33DE1126A56FD6007ECA95 /* Main.storyboard */,
+				DD33DE3C26A819BA007ECA95 /* timerVC.swift */,
+				DD33DE3826A81621007ECA95 /* tabBarPageCVCell.swift */,
+				DD33DE3926A81621007ECA95 /* tabBarPageCVCell.xib */,
+				DD33DE3426A81336007ECA95 /* tabBarVC.swift */,
 				DD33DE1426A56FD7007ECA95 /* Assets.xcassets */,
 				DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */,
 				DD33DE1926A56FD7007ECA95 /* Info.plist */,
@@ -110,6 +135,8 @@
 				DD33DE2126A5CCD5007ECA95 /* DogInfoVC.swift */,
 				DD33DE2326A68C01007ECA95 /* DogInfoRegisterVC.swift */,
 				DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */,
+				DD33DE2A26A70E30007ECA95 /* sideMenuViewController.swift */,
+				DD33DE2C26A70FA7007ECA95 /* CustomSideMenuNavigation.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD33DE1826A56FD7007ECA95 /* LaunchScreen.storyboard in Resources */,
+				DD33DE3326A7B5F7007ECA95 /* KeyList.plist in Resources */,
+				DD33DE3B26A81621007ECA95 /* tabBarPageCVCell.xib in Resources */,
 				DD33DE1526A56FD7007ECA95 /* Assets.xcassets in Resources */,
 				DD33DE1326A56FD6007ECA95 /* Main.storyboard in Resources */,
 			);
@@ -228,14 +257,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD33DE2F26A72939007ECA95 /* weather.swift in Sources */,
 				DD33DE2626A68EC5007ECA95 /* mainData.swift in Sources */,
+				DD33DE3D26A819BA007ECA95 /* timerVC.swift in Sources */,
 				DD33DE2826A6CE9C007ECA95 /* HomeVC.swift in Sources */,
+				DD33DE2D26A70FA7007ECA95 /* CustomSideMenuNavigation.swift in Sources */,
+				DD33DE3126A7AE92007ECA95 /* WeatherService.swift in Sources */,
 				DD33DE1026A56FD6007ECA95 /* ViewController.swift in Sources */,
 				DD33DE0C26A56FD6007ECA95 /* AppDelegate.swift in Sources */,
 				DD33DE2426A68C01007ECA95 /* DogInfoRegisterVC.swift in Sources */,
 				DD33DE0E26A56FD6007ECA95 /* SceneDelegate.swift in Sources */,
+				DD33DE3526A81336007ECA95 /* tabBarVC.swift in Sources */,
 				DD33DE2026A5C315007ECA95 /* UserInfoVC.swift in Sources */,
 				DD33DE2226A5CCD5007ECA95 /* DogInfoVC.swift in Sources */,
+				DD33DE2B26A70E31007ECA95 /* sideMenuViewController.swift in Sources */,
+				DD33DE3A26A81621007ECA95 /* tabBarPageCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,14 +41,16 @@ class UserInfoVC: UIViewController {
         dvc.dogName = dogNameTextField.text
         main.shared.dogName = dvc.dogName
         
-        dvc.modalPresentationStyle = .fullScreen
-        self.present(dvc, animated: true, completion: nil)
+//        dvc.modalPresentationStyle = .fullScreen
+//        self.present(dvc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(dvc, animated: true)
         
     }
     
  
     @IBAction func didTapCancelBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+        //self.dismiss(animated: true, completion: nil)
     }
     
 

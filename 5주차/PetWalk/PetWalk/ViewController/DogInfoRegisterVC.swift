@@ -102,15 +102,17 @@ class DogInfoRegisterVC: UIViewController {
     
     @IBAction func didTapDismiss(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+//        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func didTapComplete(_ sender: Any) {
         
         guard let dvc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
         
-        dvc.modalPresentationStyle = .fullScreen
-        self.present(dvc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(dvc, animated: true)
+//        dvc.modalPresentationStyle = .fullScreen
+//        self.present(dvc, animated: true, completion: nil)
     }
     @IBAction func didTapImage(_ sender: Any) {
         let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)

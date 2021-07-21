@@ -54,8 +54,9 @@ class ViewController: UIViewController {
                     }
                     
                 
-                dvc.modalPresentationStyle = .fullScreen
-                self.present(dvc, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(dvc, animated: true)
+//                dvc.modalPresentationStyle = .fullScreen
+//                self.present(dvc, animated: true, completion: nil)
                 
             
                 
@@ -82,15 +83,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func kakaoLogoutBtnTouched(_ sender: Any) {
-        UserApi.shared.logout {(error) in
-            if let error = error {
-                print(error)
-            }
-            else {
-                print("logout() success.")
-                
-            }
-        }
+   
 
     }
 
