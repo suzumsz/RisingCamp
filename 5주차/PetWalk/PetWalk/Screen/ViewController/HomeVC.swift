@@ -9,6 +9,7 @@ import UIKit
 import SideMenu
 import KakaoSDKUser
 
+// 숨긴 API Key
 private var apiKey: String {
     get {
         // 생성한 .plist 파일 경로 불러오기
@@ -28,9 +29,12 @@ private var apiKey: String {
 }
 
 class HomeVC: UIViewController {
-    // clear일때 rain일때 wind일때 cloud일때
-    var weatherClear = ["산책하기 좋은 날이에요!!","산책시, 우비를 입혀주세요!!","바람이 부니 주의해주세요!!", "산책시, 비가 올 수도 있어요!!" ]
     
+    // MARK: - Properties
+    var weatherClear = ["산책하기 좋은 날이에요!!","산책시, 우비를 입혀주세요!!","바람이 부니 주의해주세요!!", "산책시, 비가 올 수도 있어요!!" ]
+    var weather: Weather?
+    var main: Main?
+    var name: String?
     @IBOutlet weak var dogBreedToWalkLabel: UILabel!
     @IBOutlet weak var dogNameLabel: UILabel!
     @IBOutlet weak var clearWeather: UILabel!
@@ -41,75 +45,54 @@ class HomeVC: UIViewController {
     @IBOutlet weak var minTempLabel: UILabel!
     @IBOutlet weak var currentTempLabel: UILabel!
     @IBOutlet weak var weatherImageView: UIImageView!
-    
     @IBOutlet weak var circleUIView1: UIView!
     @IBOutlet weak var circleUIView2: UIView!
     @IBOutlet weak var circleUIView3: UIView!
     
-    var weather: Weather?
-    var main: Main?
-    var name: String?
-    
+    // MARK: - LifeCycle
+    // viewdidload
     override func viewDidLoad() {
         super.viewDidLoad()
+        setCircleView()
+        setData()
+    }
+    
+    // viewwillappear
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        userNameLabel.text = userMainData.shared.loginUser! + String("님!")
-        
-        dogNameLabel.text = userMainData.shared.dogName
-        
-        dogBreedToWalkLabel.text = "30분"
-        
-        
-        
-        
+        // data fetch
+        WeatherService().getWeather { result in
+            switch result {
+            case .success(let weatherResponse):
+                DispatchQueue.main.async {
+                    self.weather = weatherResponse.weather.first
+                    self.main = weatherResponse.main
+                    self.name = weatherResponse.name
+                    self.setWeatherUI()
+                    self.setKoreanWeather()
+                    self.locationCity()
+                }
+            case .failure(_ ):
+                print("error")
+            }
+        }
+    }
+    
+    // MARK: - Function
+    func setCircleView() {
         circleUIView1.layer.cornerRadius = circleUIView1.frame.height/2
         circleUIView2.layer.cornerRadius = circleUIView2.frame.height/2
         circleUIView3.layer.cornerRadius = circleUIView3.frame.height/2
-        
-        
     }
     
-    // 뷰가 나타날 것이다.
-        override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            print("DEBUG VC1 >> \(#function) ")
-            
-            // data fetch
-            WeatherService().getWeather { result in
-                switch result {
-                case .success(let weatherResponse):
-                    DispatchQueue.main.async {
-                        self.weather = weatherResponse.weather.first
-                        self.main = weatherResponse.main
-                        self.name = weatherResponse.name
-                        self.setWeatherUI()
-                        self.setKoreanWeather()
-                        self.locationCity()
-                    }
-                case .failure(_ ):
-                    print("error")
-                }
-            }
- 
-        }
-    
-    
-    
-    
-    
-    @IBAction func didTapSideMenu(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                
-                //사이드메뉴 뷰컨트롤러 객체 생성
-                let sideMenuViewController: sideMenuViewController = storyboard.instantiateViewController(withIdentifier: "sideMenuViewController") as! sideMenuViewController
-                
-                //커스텀 네비게이션이랑 사이드메뉴 뷰컨트롤러 연결
-                let menu = CustomSideMenuNavigation(rootViewController: sideMenuViewController)
-                
-                //보여주기
-                present(menu, animated: true, completion: nil)
+    func setData() {
+        userNameLabel.text = userMainData.shared.loginUser! + String("님!")
+        dogNameLabel.text = userMainData.shared.dogName
+        dogBreedToWalkLabel.text = "30분"
     }
     
+    // 날씨 상태 한국어로
     func setKoreanWeather() {
         if weather!.main == "Clear" {
             clearWeather.text = "맑음"
@@ -129,13 +112,14 @@ class HomeVC: UIViewController {
         }
     }
     
+    // 위치 한국어로
     func locationCity() {
         if name == "Incheon" {
             currentLacationLabel.text = "인천"
         }
     }
     
-    
+    // 날씨정보
     private func setWeatherUI() {
         let url = URL(string: "https://openweathermap.org/img/wn/\(self.weather?.icon ?? "00")@2x.png")
         let data = try? Data(contentsOf: url!)
@@ -149,17 +133,34 @@ class HomeVC: UIViewController {
         minTempLabel.text = "\(main!.temp_min)"
     }
     
+    // MARK: - IBAction
+    // SideMenu
+    @IBAction func didTapSideMenu(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        //사이드메뉴 뷰컨트롤러 객체 생성
+        let sideMenuViewController: sideMenuViewController = storyboard.instantiateViewController(withIdentifier: "sideMenuViewController") as! sideMenuViewController
+        
+        //커스텀 네비게이션이랑 사이드메뉴 뷰컨트롤러 연결
+        let menu = CustomSideMenuNavigation(rootViewController: sideMenuViewController)
+        
+        //보여주기
+        present(menu, animated: true, completion: nil)
+    }
     
+    // 로그아웃버튼
     @IBAction func logoutdidTap(_ sender: Any) {
+        // 로그아웃
         UserApi.shared.logout {(error) in
             if let error = error {
                 print(error)
             }
             else {
+                // 로그아웃 성공
                 print("logout() success.")
                 
-                
-                // 현재 위치에서 ViewController가 있는 곳으로 이동하고 그 사이의 VC는 stack에서 사라지게 됨
+                // 현재 위치에서 'ViewController'가 있는 곳으로 이동, 그 사이의 VC는 stack에서 사라지게 됨
                 let controllers = self.navigationController?.viewControllers
                 for vc in controllers! {
                     if vc is ViewController {
@@ -170,6 +171,4 @@ class HomeVC: UIViewController {
             }
         }
     }
-    
-    
 }
