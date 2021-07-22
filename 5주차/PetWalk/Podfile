@@ -10,6 +10,7 @@ target 'PetWalk' do
   pod 'KakaoSDKAuth'  # 사용자 인증
   pod 'Alamofire', '~> 5.4'
   pod 'SideMenu'
+  pod 'FSCalendar'
 
   # Pods for PetWalk
 

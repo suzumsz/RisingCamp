@@ -29,7 +29,8 @@ class DogInfoRegisterVC: UIViewController {
         textFieldStyle2()
         showDatePicker()
         
-        main.shared.dogWeight = weightTextField.text
+        userMainData.shared.dogWeight = weightTextField.text
+        ageTextField.tintColor = .clear
 
     }
     
@@ -58,7 +59,7 @@ class DogInfoRegisterVC: UIViewController {
        let formatter = DateFormatter()
        formatter.dateFormat = "yyyy년 MM월 dd일"
         ageTextField.text = formatter.string(from: datePicker.date)
-        main.shared.dogAge = ageTextField.text
+        userMainData.shared.dogAge = ageTextField.text
        self.view.endEditing(true)
      }
 
@@ -108,8 +109,8 @@ class DogInfoRegisterVC: UIViewController {
     
     @IBAction func didTapComplete(_ sender: Any) {
         
-        guard let dvc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        
+        guard let dvc = storyboard?.instantiateViewController(identifier: "tabBarController") as? tabBarController else {return}
+           
         self.navigationController?.pushViewController(dvc, animated: true)
 //        dvc.modalPresentationStyle = .fullScreen
 //        self.present(dvc, animated: true, completion: nil)
@@ -134,6 +135,7 @@ extension DogInfoRegisterVC : UIImagePickerControllerDelegate, UINavigationContr
         {
             dogImageView.image = image
             print(info)
+            userMainData.shared.dogImage = dogImageView.image
             
             
             addImageLabel.isHidden = true

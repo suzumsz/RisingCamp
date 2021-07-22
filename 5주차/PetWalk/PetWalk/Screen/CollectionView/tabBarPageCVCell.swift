@@ -8,6 +8,8 @@
 import UIKit
 
 class tabBarPageCVCell: UICollectionViewCell {
+    
+    static let identifier = "tabBarPageCVCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

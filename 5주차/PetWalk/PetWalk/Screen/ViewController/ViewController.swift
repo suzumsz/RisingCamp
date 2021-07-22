@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                         _ = user
                         dvc.nameLabel = user?.kakaoAccount?.profile?.nickname
                         
-                         main.shared.loginUser = user?.kakaoAccount?.profile?.nickname
+                         userMainData.shared.loginUser = user?.kakaoAccount?.profile?.nickname
                     }
                     
                 

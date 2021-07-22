@@ -12,6 +12,7 @@ class DogInfoVC: UIViewController {
     let dogBreed = ["닥스훈트", "슈나우저", "래브라도레트리버", "푸들", "말티즈", "불독", "보더콜리"]
     
     var dogName : String?
+    var dogSexName : String?
     
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var dogNameLabel: UILabel!
@@ -69,15 +70,19 @@ class DogInfoVC: UIViewController {
     @IBAction func didSelectBoyBtn(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
-            boyBtn.layer.borderColor = #colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1)
-            boyBtn.layer.borderWidth = 1
-            boyBtn.layer.cornerRadius = 5
-        
         if sender.isSelected == false {
             boyBtn.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             boyBtn.layer.borderWidth = 1
             boyBtn.layer.cornerRadius = 5
         }
+        else {
+            boyBtn.layer.borderColor = #colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1)
+            boyBtn.layer.borderWidth = 1
+            boyBtn.layer.cornerRadius = 5
+            dogSexName = "남아"
+            userMainData.shared.dogSex = dogSexName
+        }
+
         
         
         
@@ -86,15 +91,19 @@ class DogInfoVC: UIViewController {
     @IBAction func didSelectGirlBtn(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
-            girlBtn.layer.borderColor = #colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1)
-            girlBtn.layer.borderWidth = 1
-            girlBtn.layer.cornerRadius = 5
-        
         if sender.isSelected == false {
             girlBtn.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             girlBtn.layer.borderWidth = 1
             girlBtn.layer.cornerRadius = 5
         }
+        else {
+            girlBtn.layer.borderColor = #colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1)
+            girlBtn.layer.borderWidth = 1
+            girlBtn.layer.cornerRadius = 5
+            dogSexName = "여아"
+            userMainData.shared.dogSex = dogSexName
+        }
+        
         
     }
     
@@ -116,7 +125,7 @@ extension DogInfoVC: UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewData
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         dogBreedTextField.text = dogBreed[row]
-        main.shared.dogBreed = dogBreedTextField.text
+        userMainData.shared.dogBreed = dogBreedTextField.text
     }
     
     func createPickerView() {

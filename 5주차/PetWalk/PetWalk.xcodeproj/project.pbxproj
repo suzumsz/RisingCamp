@@ -25,9 +25,8 @@
 		DD33DE3126A7AE92007ECA95 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3026A7AE92007ECA95 /* WeatherService.swift */; };
 		DD33DE3326A7B5F7007ECA95 /* KeyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE3226A7B5F7007ECA95 /* KeyList.plist */; };
 		DD33DE3526A81336007ECA95 /* tabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3426A81336007ECA95 /* tabBarVC.swift */; };
-		DD33DE3A26A81621007ECA95 /* tabBarPageCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3826A81621007ECA95 /* tabBarPageCVCell.swift */; };
-		DD33DE3B26A81621007ECA95 /* tabBarPageCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE3926A81621007ECA95 /* tabBarPageCVCell.xib */; };
 		DD33DE3D26A819BA007ECA95 /* timerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3C26A819BA007ECA95 /* timerVC.swift */; };
+		DD33DE4A26A88328007ECA95 /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE4926A88327007ECA95 /* tabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +52,8 @@
 		DD33DE3026A7AE92007ECA95 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		DD33DE3226A7B5F7007ECA95 /* KeyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = KeyList.plist; sourceTree = "<group>"; };
 		DD33DE3426A81336007ECA95 /* tabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarVC.swift; sourceTree = "<group>"; };
-		DD33DE3826A81621007ECA95 /* tabBarPageCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarPageCVCell.swift; sourceTree = "<group>"; };
-		DD33DE3926A81621007ECA95 /* tabBarPageCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBarPageCVCell.xib; sourceTree = "<group>"; };
 		DD33DE3C26A819BA007ECA95 /* timerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerVC.swift; sourceTree = "<group>"; };
+		DD33DE4926A88327007ECA95 /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,21 +106,9 @@
 		DD33DE0A26A56FD6007ECA95 /* PetWalk */ = {
 			isa = PBXGroup;
 			children = (
-				DD33DE2926A6D994007ECA95 /* ViewController */,
-				DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */,
-				DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */,
-				DD33DE2526A68EC5007ECA95 /* mainData.swift */,
-				DD33DE2E26A72939007ECA95 /* weather.swift */,
-				DD33DE3026A7AE92007ECA95 /* WeatherService.swift */,
-				DD33DE3226A7B5F7007ECA95 /* KeyList.plist */,
-				DD33DE1126A56FD6007ECA95 /* Main.storyboard */,
-				DD33DE3C26A819BA007ECA95 /* timerVC.swift */,
-				DD33DE3826A81621007ECA95 /* tabBarPageCVCell.swift */,
-				DD33DE3926A81621007ECA95 /* tabBarPageCVCell.xib */,
-				DD33DE3426A81336007ECA95 /* tabBarVC.swift */,
-				DD33DE1426A56FD7007ECA95 /* Assets.xcassets */,
-				DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */,
-				DD33DE1926A56FD7007ECA95 /* Info.plist */,
+				DD33DE3E26A86E1E007ECA95 /* Support */,
+				DD33DE3F26A86E2D007ECA95 /* Screen */,
+				DD33DE4026A86E3C007ECA95 /* Global */,
 			);
 			path = PetWalk;
 			sourceTree = "<group>";
@@ -137,8 +123,75 @@
 				DD33DE2726A6CE9C007ECA95 /* HomeVC.swift */,
 				DD33DE2A26A70E30007ECA95 /* sideMenuViewController.swift */,
 				DD33DE2C26A70FA7007ECA95 /* CustomSideMenuNavigation.swift */,
+				DD33DE3C26A819BA007ECA95 /* timerVC.swift */,
+				DD33DE3426A81336007ECA95 /* tabBarVC.swift */,
+				DD33DE4926A88327007ECA95 /* tabBarController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DD33DE3E26A86E1E007ECA95 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */,
+				DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */,
+				DD33DE1426A56FD7007ECA95 /* Assets.xcassets */,
+				DD33DE1626A56FD7007ECA95 /* LaunchScreen.storyboard */,
+				DD33DE1926A56FD7007ECA95 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DD33DE3F26A86E2D007ECA95 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE4326A86F68007ECA95 /* Data */,
+				DD33DE4426A86FAB007ECA95 /* CollectionView */,
+				DD33DE4226A86F14007ECA95 /* Storyboard */,
+				DD33DE2926A6D994007ECA95 /* ViewController */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DD33DE4026A86E3C007ECA95 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE4126A86EE3007ECA95 /* Extension */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		DD33DE4126A86EE3007ECA95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD33DE4226A86F14007ECA95 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE1126A56FD6007ECA95 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DD33DE4326A86F68007ECA95 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE2526A68EC5007ECA95 /* mainData.swift */,
+				DD33DE2E26A72939007ECA95 /* weather.swift */,
+				DD33DE3026A7AE92007ECA95 /* WeatherService.swift */,
+				DD33DE3226A7B5F7007ECA95 /* KeyList.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DD33DE4426A86FAB007ECA95 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +255,6 @@
 			files = (
 				DD33DE1826A56FD7007ECA95 /* LaunchScreen.storyboard in Resources */,
 				DD33DE3326A7B5F7007ECA95 /* KeyList.plist in Resources */,
-				DD33DE3B26A81621007ECA95 /* tabBarPageCVCell.xib in Resources */,
 				DD33DE1526A56FD7007ECA95 /* Assets.xcassets in Resources */,
 				DD33DE1326A56FD6007ECA95 /* Main.storyboard in Resources */,
 			);
@@ -258,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD33DE2F26A72939007ECA95 /* weather.swift in Sources */,
+				DD33DE4A26A88328007ECA95 /* tabBarController.swift in Sources */,
 				DD33DE2626A68EC5007ECA95 /* mainData.swift in Sources */,
 				DD33DE3D26A819BA007ECA95 /* timerVC.swift in Sources */,
 				DD33DE2826A6CE9C007ECA95 /* HomeVC.swift in Sources */,
@@ -271,7 +324,6 @@
 				DD33DE2026A5C315007ECA95 /* UserInfoVC.swift in Sources */,
 				DD33DE2226A5CCD5007ECA95 /* DogInfoVC.swift in Sources */,
 				DD33DE2B26A70E31007ECA95 /* sideMenuViewController.swift in Sources */,
-				DD33DE3A26A81621007ECA95 /* tabBarPageCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 296LN74J9R;
-				INFOPLIST_FILE = PetWalk/Info.plist;
+				INFOPLIST_FILE = PetWalk/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 296LN74J9R;
-				INFOPLIST_FILE = PetWalk/Info.plist;
+				INFOPLIST_FILE = PetWalk/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

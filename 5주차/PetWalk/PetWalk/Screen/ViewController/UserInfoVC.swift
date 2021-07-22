@@ -39,7 +39,7 @@ class UserInfoVC: UIViewController {
         guard let dvc = self.storyboard?.instantiateViewController(identifier: "DogInfoVC") as? DogInfoVC else {return}
         
         dvc.dogName = dogNameTextField.text
-        main.shared.dogName = dvc.dogName
+        userMainData.shared.dogName = dvc.dogName
         
 //        dvc.modalPresentationStyle = .fullScreen
 //        self.present(dvc, animated: true, completion: nil)
