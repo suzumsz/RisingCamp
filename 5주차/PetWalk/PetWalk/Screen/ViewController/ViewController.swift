@@ -5,10 +5,6 @@
 //  Created by 김수정 on 2021/07/19.
 //
 
-
-// 비밀번호 틀렸을 때 틀렸다는 알림창 나오게.
-// 로그아웃
-
 import UIKit
 import KakaoSDKAuth
 import KakaoSDKUser
