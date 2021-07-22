@@ -36,7 +36,7 @@ class ViewController: UIViewController {
                 _ = oauthToken
                 let accessToken = oauthToken?.accessToken
                 
-                // 로그인 성공시, 'UserInfoVC' 호출
+                // 로그인 성공시, 'UserInfoVC' 선언
                 guard let dvc = self.storyboard?.instantiateViewController(identifier: "UserInfoVC") as? UserInfoVC else {return}
                 
                 // 카카오 로그인을 통해 사용자 토큰을 발급 받은 후 사용자 관리 API 호출
