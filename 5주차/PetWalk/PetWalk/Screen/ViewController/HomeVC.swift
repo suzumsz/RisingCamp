@@ -8,6 +8,7 @@
 import UIKit
 import SideMenu
 import KakaoSDKUser
+import Alamofire
 
 // 숨긴 API Key
 private var apiKey: String {
@@ -61,8 +62,12 @@ class HomeVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // data fetch
-        WeatherService().getWeather { result in
+        weatherInfo(city: "Incheon")
+    
+    }
+    
+    func weatherInfo(city:String) {
+        WeatherService.shared.getWeatherData(cityName: city){ result in
             switch result {
             case .success(let weatherResponse):
                 DispatchQueue.main.async {
@@ -79,6 +84,8 @@ class HomeVC: UIViewController {
         }
     }
     
+  
+    
     // MARK: - Function
     func setCircleView() {
         circleUIView1.layer.cornerRadius = circleUIView1.frame.height/2
@@ -87,7 +94,7 @@ class HomeVC: UIViewController {
     }
     
     func setData() {
-        userNameLabel.text = userMainData.shared.loginUser! + String("님!")
+        //userNameLabel.text = userMainData.shared.loginUser! + String("님!")
         dogNameLabel.text = userMainData.shared.dogName
         dogBreedToWalkLabel.text = "30분"
     }

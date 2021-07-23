@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQe-G4-KOb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QsC-fr-NpB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -831,111 +831,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jr4-Zj-JeZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="Mlg-B6-jVw">
-                                        <rect key="frame" x="69" y="18" width="276" height="34"/>
+                                        <rect key="frame" x="62" y="7" width="290" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhK-vA-bBr">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <state key="normal" title="산책내역"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <state key="normal" title="산책내역">
+                                                    <color key="titleColor" red="0.31764706970000001" green="0.69411766529999996" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="walkRecord:" destination="R9D-F0-NSw" eventType="touchUpInside" id="UJm-s2-NQP"/>
+                                                    <action selector="walkRecord:" destination="R9D-F0-NSw" eventType="touchUpInside" id="A8f-wa-hBc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-tV-e5M">
-                                                <rect key="frame" x="213" y="0.0" width="63" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <state key="normal" title="식사내역"/>
+                                                <rect key="frame" x="220" y="0.0" width="70" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <state key="normal" title="식사내역">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="eatRecord:" destination="R9D-F0-NSw" eventType="touchUpInside" id="72k-OR-dYt"/>
+                                                    <action selector="mealRecord:" destination="R9D-F0-NSw" eventType="touchUpInside" id="AI1-cX-eiT"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.31764706970000001" green="0.69411766529999996" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="2Xz-nM-Ecu"/>
+                                    <constraint firstAttribute="height" constant="50" id="2Xz-nM-Ecu"/>
                                     <constraint firstItem="Mlg-B6-jVw" firstAttribute="centerX" secondItem="Jr4-Zj-JeZ" secondAttribute="centerX" id="JuU-Yq-F3W"/>
                                     <constraint firstItem="Mlg-B6-jVw" firstAttribute="centerY" secondItem="Jr4-Zj-JeZ" secondAttribute="centerY" id="nu6-vx-OgS"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-ab-MWn" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="114" width="414" height="299"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="341"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="299" id="pWA-fq-TWO"/>
+                                    <constraint firstAttribute="height" constant="341" id="fNK-18-aBe"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-fy-iTe">
-                                <rect key="frame" x="347" y="130" width="47" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.31764706970000001" green="0.69411766529999996" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="펼치기"/>
-                                <connections>
-                                    <action selector="didTapToggle:" destination="R9D-F0-NSw" eventType="touchUpInside" id="goA-kg-0Em"/>
-                                </connections>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-Bu-2TO">
-                                <rect key="frame" x="0.0" y="413" width="414" height="400"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vE5-04-R5q">
+                                <rect key="frame" x="0.0" y="233" width="414" height="580"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="y3X-sQ-pMe"/>
+                                    <constraint firstAttribute="height" constant="580" id="wyf-26-u4z"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aZJ-GG-1S5">
-                                    <size key="itemSize" width="419" height="399"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="koe-fY-Mru">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tabCVCell" id="tpk-0l-7qj" customClass="tabCVCell" customModule="PetWalk" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.5" width="419" height="399"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="walkMealCVCell" id="9oh-c7-22C">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Uf1-Zh-c6t">
-                                            <rect key="frame" x="0.0" y="0.0" width="419" height="399"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GW7-07-Bmq">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-Dc-hP7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="419" height="399"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tabTableTVCell" rowHeight="118" id="Hlb-9G-in5" customClass="tabTableTVCell" customModule="PetWalk" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="24.5" width="419" height="118"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hlb-9G-in5" id="dMr-XB-CxI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="419" height="118"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="헬로우" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWX-BP-1S3">
-                                                                        <rect key="frame" x="188" y="49" width="45" height="21"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </tableViewCellContentView>
-                                                            <connections>
-                                                                <outlet property="hiLabel" destination="hWX-BP-1S3" id="1OP-lN-AkW"/>
-                                                            </connections>
-                                                        </tableViewCell>
-                                                    </prototypes>
-                                                </tableView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="GqP-Dc-hP7" firstAttribute="top" secondItem="Uf1-Zh-c6t" secondAttribute="top" id="KmL-nB-dCa"/>
-                                                <constraint firstItem="GqP-Dc-hP7" firstAttribute="leading" secondItem="Uf1-Zh-c6t" secondAttribute="leading" id="Tlv-Tj-jyy"/>
-                                                <constraint firstAttribute="trailing" secondItem="GqP-Dc-hP7" secondAttribute="trailing" id="Z42-Gc-oXr"/>
-                                                <constraint firstAttribute="bottom" secondItem="GqP-Dc-hP7" secondAttribute="bottom" id="fPB-VU-x92"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="419" height="399"/>
-                                        <connections>
-                                            <outlet property="tabTableView" destination="GqP-Dc-hP7" id="fHZ-g7-2My"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -943,23 +900,23 @@
                         <viewLayoutGuide key="safeArea" id="9UV-aq-8On"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="g1n-ab-MWn" firstAttribute="leading" secondItem="9UV-aq-8On" secondAttribute="leading" id="2Hp-cP-xeZ"/>
-                            <constraint firstItem="g1n-ab-MWn" firstAttribute="top" secondItem="Jr4-Zj-JeZ" secondAttribute="bottom" id="2gL-Ew-lSl"/>
-                            <constraint firstItem="hgb-Bu-2TO" firstAttribute="leading" secondItem="9UV-aq-8On" secondAttribute="leading" id="Ohx-KS-fia"/>
-                            <constraint firstItem="hgb-Bu-2TO" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9UV-aq-8On" secondAttribute="bottom" id="QBc-GG-nlp"/>
-                            <constraint firstItem="hgb-Bu-2TO" firstAttribute="trailing" secondItem="9UV-aq-8On" secondAttribute="trailing" id="Vgv-7f-Pj3"/>
+                            <constraint firstItem="vE5-04-R5q" firstAttribute="leading" secondItem="9UV-aq-8On" secondAttribute="leading" id="5Dy-go-2cr"/>
+                            <constraint firstItem="vE5-04-R5q" firstAttribute="bottom" secondItem="9UV-aq-8On" secondAttribute="bottom" id="5E9-UX-hug"/>
+                            <constraint firstItem="g1n-ab-MWn" firstAttribute="top" secondItem="Jr4-Zj-JeZ" secondAttribute="bottom" id="9zz-Dn-WnU"/>
                             <constraint firstItem="Jr4-Zj-JeZ" firstAttribute="trailing" secondItem="9UV-aq-8On" secondAttribute="trailing" id="WE8-Wc-RnS"/>
                             <constraint firstItem="Jr4-Zj-JeZ" firstAttribute="leading" secondItem="9UV-aq-8On" secondAttribute="leading" id="WPd-7L-tb0"/>
-                            <constraint firstItem="hgb-Bu-2TO" firstAttribute="top" secondItem="g1n-ab-MWn" secondAttribute="bottom" id="hqt-zQ-Ou3"/>
-                            <constraint firstItem="g1n-ab-MWn" firstAttribute="trailing" secondItem="9UV-aq-8On" secondAttribute="trailing" id="l6E-i8-vCo"/>
+                            <constraint firstItem="g1n-ab-MWn" firstAttribute="leading" secondItem="9UV-aq-8On" secondAttribute="leading" id="e1d-56-Vbd"/>
+                            <constraint firstItem="g1n-ab-MWn" firstAttribute="trailing" secondItem="9UV-aq-8On" secondAttribute="trailing" id="sDa-bC-hQH"/>
+                            <constraint firstItem="vE5-04-R5q" firstAttribute="trailing" secondItem="9UV-aq-8On" secondAttribute="trailing" id="vp1-AQ-Tqk"/>
                             <constraint firstItem="Jr4-Zj-JeZ" firstAttribute="top" secondItem="9UV-aq-8On" secondAttribute="top" id="zVk-E2-L7N"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="기록" image="pencil" catalog="system" selectedImage="pencil" id="cZd-KS-EG9"/>
                     <connections>
                         <outlet property="calendarUIView" destination="g1n-ab-MWn" id="1Ac-60-3nL"/>
-                        <outlet property="tabBarCollectionView" destination="hgb-Bu-2TO" id="NBE-Td-YTJ"/>
-                        <outlet property="toggleTap" destination="hCH-fy-iTe" id="OIJ-hA-IIC"/>
+                        <outlet property="mealBtn" destination="Y5A-tV-e5M" id="EWR-FY-nw1"/>
+                        <outlet property="tabBarCollectionView" destination="vE5-04-R5q" id="zR6-1Z-1Tg"/>
+                        <outlet property="walkBtn" destination="BhK-vA-bBr" id="aO0-I1-NQx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWq-oP-ktD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1081,9 +1038,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -27,8 +27,10 @@
 		DD33DE3526A81336007ECA95 /* tabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3426A81336007ECA95 /* tabBarVC.swift */; };
 		DD33DE3D26A819BA007ECA95 /* timerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE3C26A819BA007ECA95 /* timerVC.swift */; };
 		DD33DE4A26A88328007ECA95 /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE4926A88327007ECA95 /* tabBarController.swift */; };
-		DD33DE6D26A9AE75007ECA95 /* tabCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE6B26A9AE74007ECA95 /* tabCVCell.swift */; };
-		DD33DE7026AA4B79007ECA95 /* tabTableTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE6F26AA4B79007ECA95 /* tabTableTVCell.swift */; };
+		DD33DE7B26AABE41007ECA95 /* walkMealCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE7926AABE40007ECA95 /* walkMealCVCell.swift */; };
+		DD33DE7C26AABE41007ECA95 /* walkMealCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE7A26AABE40007ECA95 /* walkMealCVCell.xib */; };
+		DD33DE7F26AABF84007ECA95 /* swipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE7D26AABF84007ECA95 /* swipeTableViewCell.swift */; };
+		DD33DE8026AABF84007ECA95 /* swipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD33DE7E26AABF84007ECA95 /* swipeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,8 +57,10 @@
 		DD33DE3426A81336007ECA95 /* tabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarVC.swift; sourceTree = "<group>"; };
 		DD33DE3C26A819BA007ECA95 /* timerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerVC.swift; sourceTree = "<group>"; };
 		DD33DE4926A88327007ECA95 /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
-		DD33DE6B26A9AE74007ECA95 /* tabCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabCVCell.swift; sourceTree = "<group>"; };
-		DD33DE6F26AA4B79007ECA95 /* tabTableTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabTableTVCell.swift; sourceTree = "<group>"; };
+		DD33DE7926AABE40007ECA95 /* walkMealCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkMealCVCell.swift; sourceTree = "<group>"; };
+		DD33DE7A26AABE40007ECA95 /* walkMealCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = walkMealCVCell.xib; sourceTree = "<group>"; };
+		DD33DE7D26AABF84007ECA95 /* swipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swipeTableViewCell.swift; sourceTree = "<group>"; };
+		DD33DE7E26AABF84007ECA95 /* swipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = swipeTableViewCell.xib; sourceTree = "<group>"; };
 		E52F4CDA4C91F1194AB74F77 /* Pods-PetWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.debug.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,8 +133,6 @@
 				DD33DE2C26A70FA7007ECA95 /* CustomSideMenuNavigation.swift */,
 				DD33DE3C26A819BA007ECA95 /* timerVC.swift */,
 				DD33DE3426A81336007ECA95 /* tabBarVC.swift */,
-				DD33DE6B26A9AE74007ECA95 /* tabCVCell.swift */,
-				DD33DE6F26AA4B79007ECA95 /* tabTableTVCell.swift */,
 				DD33DE4926A88327007ECA95 /* tabBarController.swift */,
 			);
 			path = ViewController;
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				DD33DE4326A86F68007ECA95 /* Data */,
+				DD33DE8126AAC458007ECA95 /* TableView */,
 				DD33DE4426A86FAB007ECA95 /* CollectionView */,
 				DD33DE4226A86F14007ECA95 /* Storyboard */,
 				DD33DE2926A6D994007ECA95 /* ViewController */,
@@ -196,8 +199,19 @@
 		DD33DE4426A86FAB007ECA95 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				DD33DE7926AABE40007ECA95 /* walkMealCVCell.swift */,
+				DD33DE7A26AABE40007ECA95 /* walkMealCVCell.xib */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DD33DE8126AAC458007ECA95 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DD33DE7D26AABF84007ECA95 /* swipeTableViewCell.swift */,
+				DD33DE7E26AABF84007ECA95 /* swipeTableViewCell.xib */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD33DE8026AABF84007ECA95 /* swipeTableViewCell.xib in Resources */,
 				DD33DE1826A56FD7007ECA95 /* LaunchScreen.storyboard in Resources */,
 				DD33DE3326A7B5F7007ECA95 /* KeyList.plist in Resources */,
 				DD33DE1526A56FD7007ECA95 /* Assets.xcassets in Resources */,
 				DD33DE1326A56FD6007ECA95 /* Main.storyboard in Resources */,
+				DD33DE7C26AABE41007ECA95 /* walkMealCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD33DE7F26AABF84007ECA95 /* swipeTableViewCell.swift in Sources */,
 				DD33DE2F26A72939007ECA95 /* weather.swift in Sources */,
 				DD33DE4A26A88328007ECA95 /* tabBarController.swift in Sources */,
+				DD33DE7B26AABE41007ECA95 /* walkMealCVCell.swift in Sources */,
 				DD33DE2626A68EC5007ECA95 /* mainData.swift in Sources */,
 				DD33DE3D26A819BA007ECA95 /* timerVC.swift in Sources */,
 				DD33DE2826A6CE9C007ECA95 /* HomeVC.swift in Sources */,
@@ -325,8 +343,6 @@
 				DD33DE1026A56FD6007ECA95 /* ViewController.swift in Sources */,
 				DD33DE0C26A56FD6007ECA95 /* AppDelegate.swift in Sources */,
 				DD33DE2426A68C01007ECA95 /* DogInfoRegisterVC.swift in Sources */,
-				DD33DE7026AA4B79007ECA95 /* tabTableTVCell.swift in Sources */,
-				DD33DE6D26A9AE75007ECA95 /* tabCVCell.swift in Sources */,
 				DD33DE0E26A56FD6007ECA95 /* SceneDelegate.swift in Sources */,
 				DD33DE3526A81336007ECA95 /* tabBarVC.swift in Sources */,
 				DD33DE2026A5C315007ECA95 /* UserInfoVC.swift in Sources */,

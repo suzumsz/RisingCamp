@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum NetworkError: Error {
     case badUrl
@@ -14,6 +15,9 @@ enum NetworkError: Error {
 }
 
 class WeatherService {
+    
+    static let shared = WeatherService()
+    
     // .plist에서 API Key 가져오기
     private var apiKey: String {
         get {
@@ -33,29 +37,31 @@ class WeatherService {
         }
     }
     
-    func getWeather(completion: @escaping (Result<WeatherResponse, NetworkError>) -> Void) {
+    func getWeatherData(cityName: String,completion: @escaping (Result<WeatherResponse, NetworkError>) -> Void) {
+        // 1. 전송할 값 준비
+        let apiURL = "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=\(apiKey)&units=metric"
         
-        // API 호출을 위한 URL
-        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=incheon&appid=\(apiKey)&units=metric")
-        guard let url = url else {
-            return completion(.failure(.badUrl))
+        AF.request(apiURL, method: .get, encoding: URLEncoding.httpBody).responseJSON() { response in
+            switch response.result {
+            case .success:
+                guard let data = response.data else {
+                    return completion(.failure(.noData))
+                }
+                
+                // Data 타입으로 받은 리턴을 디코드
+                let weatherResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
+                
+                // 성공
+                if let weatherResponse = weatherResponse {
+                    print(weatherResponse)
+                    completion(.success(weatherResponse)) // 성공한 데이터 저장
+                } else {
+                    completion(.failure(.decodingError))
+                }
+            case .failure(let error):
+                print(error)
+                return
+            }
         }
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else {
-                return completion(.failure(.noData))
-            }
-            
-            // Data 타입으로 받은 리턴을 디코드
-            let weatherResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
-
-            // 성공
-            if let weatherResponse = weatherResponse {
-                print(weatherResponse)
-                completion(.success(weatherResponse)) // 성공한 데이터 저장
-            } else {
-                completion(.failure(.decodingError))
-            }
-        }.resume() // 이 dataTask 시작
     }
 }
