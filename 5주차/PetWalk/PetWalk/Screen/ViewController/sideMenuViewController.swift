@@ -30,7 +30,7 @@ class sideMenuViewController: UIViewController {
         dogNameLabel.text = userMainData.shared.dogName
         dogAgeLabel.text = userMainData.shared.dogAge
         dogBreedLabel.text = userMainData.shared.dogBreed
-        dogWeightLabel.text = userMainData.shared.dogWeight
+        dogWeightLabel.text = userMainData.shared.dogWeight! + String("kg")
         dogImageView.image = userMainData.shared.dogImage
         dogSexLabel.text = userMainData.shared.dogSex
         

@@ -101,7 +101,6 @@ class DogInfoRegisterVC: UIViewController {
     
     // 기타
     func set() {
-        userMainData.shared.dogWeight = weightTextField.text
         ageTextField.tintColor = .clear
         picker.delegate = self
     }
@@ -115,6 +114,7 @@ class DogInfoRegisterVC: UIViewController {
     // 완료버튼
     @IBAction func didTapComplete(_ sender: Any) {
         guard let dvc = storyboard?.instantiateViewController(identifier: "tabBarController") as? tabBarController else {return}
+        userMainData.shared.dogWeight = weightTextField.text
         self.navigationController?.pushViewController(dvc, animated: true)
     }
     
