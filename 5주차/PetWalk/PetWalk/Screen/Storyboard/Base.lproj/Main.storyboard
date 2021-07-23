@@ -996,6 +996,9 @@
                                 <state key="selected" image="pause.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="large" weight="bold"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpPlayButton:" destination="HQe-G4-KOb" eventType="touchUpInside" id="f7H-Pg-wfp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산책시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgx-Xo-crx">
                                 <rect key="frame" x="177.5" y="524" width="59" height="21"/>
@@ -1004,21 +1007,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaT-YK-KxC">
-                                <rect key="frame" x="287" y="671.5" width="87" height="42"/>
+                                <rect key="frame" x="286" y="671.5" width="87" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="산책완료">
                                     <color key="titleColor" red="0.31764706970000001" green="0.69411766529999996" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapCompleteBtn:" destination="HQe-G4-KOb" eventType="touchUpInside" id="3b4-LO-WFI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xe-Ra-FMr">
+                                <rect key="frame" x="63" y="671.5" width="65" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="초기화">
+                                    <color key="titleColor" red="0.31764706970000001" green="0.69411766529999996" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerReset:" destination="HQe-G4-KOb" eventType="touchUpInside" id="IZh-w6-IVe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qJm-LQ-6iU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ejv-e3-eOt" firstAttribute="trailing" secondItem="qJm-LQ-6iU" secondAttribute="trailing" id="1KT-IX-FZ6"/>
+                            <constraint firstItem="07N-aW-w2h" firstAttribute="leading" secondItem="6Xe-Ra-FMr" secondAttribute="trailing" constant="50" id="2R6-sM-vqI"/>
+                            <constraint firstItem="6Xe-Ra-FMr" firstAttribute="centerY" secondItem="07N-aW-w2h" secondAttribute="centerY" id="2qi-Ni-c9P"/>
                             <constraint firstItem="dnp-F8-cjd" firstAttribute="centerX" secondItem="Wgx-Xo-crx" secondAttribute="centerX" id="5SJ-o1-Xyr"/>
                             <constraint firstItem="dnp-F8-cjd" firstAttribute="top" secondItem="Wgx-Xo-crx" secondAttribute="bottom" constant="5" id="WqF-xH-g3L"/>
                             <constraint firstItem="Wgx-Xo-crx" firstAttribute="centerX" secondItem="Ejv-e3-eOt" secondAttribute="centerX" id="aVV-ml-vsF"/>
-                            <constraint firstItem="MaT-YK-KxC" firstAttribute="leading" secondItem="07N-aW-w2h" secondAttribute="trailing" constant="51" id="dTC-3B-wUk"/>
+                            <constraint firstItem="MaT-YK-KxC" firstAttribute="leading" secondItem="07N-aW-w2h" secondAttribute="trailing" constant="50" id="dTC-3B-wUk"/>
                             <constraint firstItem="Ejv-e3-eOt" firstAttribute="top" secondItem="qJm-LQ-6iU" secondAttribute="top" id="eIi-ag-zB9"/>
                             <constraint firstItem="Wgx-Xo-crx" firstAttribute="top" secondItem="Ejv-e3-eOt" secondAttribute="bottom" constant="30" id="ffF-6c-VAB"/>
                             <constraint firstItem="07N-aW-w2h" firstAttribute="centerX" secondItem="dnp-F8-cjd" secondAttribute="centerX" id="hLn-TT-5or"/>
@@ -1028,6 +1046,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="산책" image="map" catalog="system" selectedImage="map.fill" id="PaI-S4-zWC"/>
+                    <connections>
+                        <outlet property="doneBtn" destination="MaT-YK-KxC" id="KKM-l1-y6M"/>
+                        <outlet property="playBtn" destination="07N-aW-w2h" id="8Al-N8-GcC"/>
+                        <outlet property="timeLabel" destination="dnp-F8-cjd" id="OeG-np-SAN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UH-6j-1Kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

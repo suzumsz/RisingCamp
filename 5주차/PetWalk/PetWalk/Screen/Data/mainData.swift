@@ -17,6 +17,7 @@ class userMainData {
     var dogAge : String?
     var dogWeight: String?
     var loginUser : String?
+    var walkTimer : String?
     private init(){}
 }
 

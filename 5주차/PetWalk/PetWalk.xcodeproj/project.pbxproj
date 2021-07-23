@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6F7F380FD9CAEE11892111F /* Pods_PetWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB358DCC24193BE284FDBF7C /* Pods_PetWalk.framework */; };
+		B8EDFD262B05107C47843696 /* Pods_PetWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC37B8406CE506D2728E2A3 /* Pods_PetWalk.framework */; };
 		DD33DE0C26A56FD6007ECA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */; };
 		DD33DE0E26A56FD6007ECA95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */; };
 		DD33DE1026A56FD6007ECA95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DE0F26A56FD6007ECA95 /* ViewController.swift */; };
@@ -32,9 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17B7607439F9DD3A6E0E87B0 /* Pods-PetWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.debug.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.debug.xcconfig"; sourceTree = "<group>"; };
-		46EE007A7A0CF0388D4A20E3 /* Pods-PetWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.release.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.release.xcconfig"; sourceTree = "<group>"; };
-		CB358DCC24193BE284FDBF7C /* Pods_PetWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC37B8406CE506D2728E2A3 /* Pods_PetWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10B36F207AD8F4748D98DD6 /* Pods-PetWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.release.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.release.xcconfig"; sourceTree = "<group>"; };
 		DD33DE0826A56FD6007ECA95 /* PetWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD33DE0B26A56FD6007ECA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD33DE0D26A56FD6007ECA95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		DD33DE4926A88327007ECA95 /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
 		DD33DE6B26A9AE74007ECA95 /* tabCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabCVCell.swift; sourceTree = "<group>"; };
 		DD33DE6F26AA4B79007ECA95 /* tabTableTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabTableTVCell.swift; sourceTree = "<group>"; };
+		E52F4CDA4C91F1194AB74F77 /* Pods-PetWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWalk.debug.xcconfig"; path = "Target Support Files/Pods-PetWalk/Pods-PetWalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F7F380FD9CAEE11892111F /* Pods_PetWalk.framework in Frameworks */,
+				B8EDFD262B05107C47843696 /* Pods_PetWalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A6C238822F126AF928FEC2E /* Frameworks */ = {
+		2AC29149E76D193A00C7B22D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB358DCC24193BE284FDBF7C /* Pods_PetWalk.framework */,
+				4EC37B8406CE506D2728E2A3 /* Pods_PetWalk.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,8 +83,8 @@
 		8C69D53A70580D7CFF38A8CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17B7607439F9DD3A6E0E87B0 /* Pods-PetWalk.debug.xcconfig */,
-				46EE007A7A0CF0388D4A20E3 /* Pods-PetWalk.release.xcconfig */,
+				E52F4CDA4C91F1194AB74F77 /* Pods-PetWalk.debug.xcconfig */,
+				D10B36F207AD8F4748D98DD6 /* Pods-PetWalk.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 				DD33DE0A26A56FD6007ECA95 /* PetWalk */,
 				DD33DE0926A56FD6007ECA95 /* Products */,
 				8C69D53A70580D7CFF38A8CF /* Pods */,
-				2A6C238822F126AF928FEC2E /* Frameworks */,
+				2AC29149E76D193A00C7B22D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,11 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD33DE1C26A56FD7007ECA95 /* Build configuration list for PBXNativeTarget "PetWalk" */;
 			buildPhases = (
-				5588CE03AA3F538937EC6F47 /* [CP] Check Pods Manifest.lock */,
+				4B39DE084332C5CAB611429E /* [CP] Check Pods Manifest.lock */,
 				DD33DE0426A56FD6007ECA95 /* Sources */,
 				DD33DE0526A56FD6007ECA95 /* Frameworks */,
 				DD33DE0626A56FD6007ECA95 /* Resources */,
-				3DC6AEF202C4A44BDF7077B6 /* [CP] Embed Pods Frameworks */,
+				1DDD2606D4297E20B7AB706F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,7 +269,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3DC6AEF202C4A44BDF7077B6 /* [CP] Embed Pods Frameworks */ = {
+		1DDD2606D4297E20B7AB706F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,7 +286,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetWalk/Pods-PetWalk-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5588CE03AA3F538937EC6F47 /* [CP] Check Pods Manifest.lock */ = {
+		4B39DE084332C5CAB611429E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,7 +475,7 @@
 		};
 		DD33DE1D26A56FD7007ECA95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17B7607439F9DD3A6E0E87B0 /* Pods-PetWalk.debug.xcconfig */;
+			baseConfigurationReference = E52F4CDA4C91F1194AB74F77 /* Pods-PetWalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +486,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sj.PetWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -495,7 +496,7 @@
 		};
 		DD33DE1E26A56FD7007ECA95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EE007A7A0CF0388D4A20E3 /* Pods-PetWalk.release.xcconfig */;
+			baseConfigurationReference = D10B36F207AD8F4748D98DD6 /* Pods-PetWalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = sj.PetWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

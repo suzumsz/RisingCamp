@@ -12,6 +12,6 @@ target 'PetWalk' do
   pod 'SideMenu'
   pod 'FSCalendar'
 
-  # Pods for PetWalk
+# Pods for PetWalk
 
 end
