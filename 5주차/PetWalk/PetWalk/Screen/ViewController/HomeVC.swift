@@ -94,7 +94,7 @@ class HomeVC: UIViewController {
     }
     
     func setData() {
-        //userNameLabel.text = userMainData.shared.loginUser! + String("님!")
+        userNameLabel.text = userMainData.shared.loginUser! + String("님!")
         dogNameLabel.text = userMainData.shared.dogName
         dogBreedToWalkLabel.text = "30분"
     }

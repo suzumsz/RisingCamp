@@ -19,7 +19,7 @@ class walkMealCVCell: UICollectionViewCell {
     static let identifier = "walkMealCVCell"
     
     var tabBar : tabEnum?
-    var testData = [1,2,3]
+    //var testData = [1,2,3]
     
     @IBOutlet weak var tabTableView: UITableView!
     
@@ -44,7 +44,7 @@ extension walkMealCVCell: UITableViewDelegate {
 
 extension walkMealCVCell: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return testData.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,24 +52,38 @@ extension walkMealCVCell: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        
+        // 산책내역
         if tabBar == tabEnum.walk {
             cell.walkOrMealLabel.text = "산책시간"
-            cell.dateTimeLabel.text = "날짜"
+            cell.dateLabel.text = "날짜"
+            
+            // 날짜는 달력에 선택된 날짜로 가져오기
+            cell.dateTimeLabel.text = userMainData.shared.currentDate
+            print("이건들어옴?",userMainData.shared.currentDate)
             cell.walkLabel.text = userMainData.shared.walkTimer
-            cell.dateLabel.text = "안햇당께롱"
-        }
-        else if tabBar == tabEnum.meal {
-            cell.walkOrMealLabel.text = "식사시ㄴ"
-            cell.dateTimeLabel.text = "날짜"
-            cell.walkLabel.text = "여기는 식사기록입니다."
-            cell.dateLabel.text = "루릴루릴"
         }
         
+        // 식사내역
+        else if tabBar == tabEnum.meal {
+            cell.walkOrMealLabel.text = "사료명"
+            cell.dateLabel.text = "종류"
+            
+            // 달력에 선택된 날짜 가져오기
+            cell.dateTimeLabel.text = "식사"
+            cell.walkLabel.text = "닥터독"
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 150
+            return 120
     }
+    
+    func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
+    
+    }
+    
+    
     
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class userMainData {
     static let shared = userMainData()
+    var walkMealArray = Array<WalkMeal>()
     var dogName : String?
     var dogSex : String?
     var dogImage : UIImage?
@@ -18,8 +19,17 @@ class userMainData {
     var dogWeight: String?
     var loginUser : String?
     var walkTimer : String?
+    var currentDate : String?
     private init(){}
 }
+
+struct WalkMeal {
+    var walkTime: String
+    var walkDate: String
+    var mealName: String
+    var mealDate: String
+}
+
 
 
 

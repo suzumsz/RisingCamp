@@ -25,7 +25,8 @@ class tabBarVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        calendarUIView.delegate = self
+        calendar(calendarUIView, didSelect: Date(), at: .current)
         setCalendarStyleWeek()
         tabBarCollectionView.delegate = self
         tabBarCollectionView.dataSource = self
@@ -52,17 +53,19 @@ class tabBarVC: UIViewController {
         calendarUIView.appearance.headerTitleColor = .black
     }
     
-
     
+
     // MARK: - IBAction
     @IBAction func walkRecord(_ sender: UIButton) {
         tabBarCollectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .centeredHorizontally, animated: true)
        
-        if sender.isSelected == true {
-            walkBtn.setTitleColor(#colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1), for: .normal)
+        if walkBtn.isSelected == true && mealBtn.isSelected == false{
+            walkBtn.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
+            mealBtn.setTitleColor(#colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1), for: .normal)
         }
         else {
-            walkBtn.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
+            walkBtn.setTitleColor(#colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1), for: .normal)
+            mealBtn.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
         }
         
         
@@ -71,12 +74,14 @@ class tabBarVC: UIViewController {
     @IBAction func mealRecord(_ sender: UIButton) {
         tabBarCollectionView.scrollToItem(at: IndexPath(item: 1, section: 0), at: .centeredHorizontally, animated: true)
         
-         if sender.isSelected == true {
-             mealBtn.setTitleColor(#colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1), for: .normal)
-         }
-         else {
-             mealBtn.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
-         }
+        if walkBtn.isSelected == false && mealBtn.isSelected == true{
+            walkBtn.setTitleColor(#colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1), for: .normal)
+            mealBtn.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
+        }
+        else {
+            walkBtn.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
+            mealBtn.setTitleColor(#colorLiteral(red: 0.02356945537, green: 0.7047216296, blue: 0.5695679188, alpha: 1), for: .normal)
+        }
     }
 }
 
@@ -116,5 +121,17 @@ extension tabBarVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
     {
         return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+}
+
+extension tabBarVC: FSCalendarDelegate {
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+    
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        userMainData.shared.currentDate = dateFormatter.string(from: date)
+        print("날짜가 나오나",dateFormatter.string(from: date))
+        print("유저데이터에들ㅇ어가나?",userMainData.shared.currentDate)
     }
 }
