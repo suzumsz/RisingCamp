@@ -16,7 +16,7 @@
 | 7주차 | Rising Test | 프론트엔드, 백엔드 실전 프로젝트(Rising Test) 진행 |
 | 8주차 | Rising Test | 프론트엔드, 백엔드 실전 프로젝트(Rising Test) 진행 |
 
-`🔥 Rising Test 통과해야 수료가능`
+`🔥 RisingTest 통과해야 수료가능`
 
 ## 📌 주차별 진행 상황
 | 주차 | 날짜 | 커리큘럼 | 과제 | 수행 여부 |  리드미 이동 |   
@@ -26,5 +26,5 @@
 | 3주차 | 21.07.03 ~ 21.07.09 | Table View | 반려동물 사진 일기 App | 📔 | [이동](./3주차/AnimalDiary/readme.md) |
 | 4주차 | 21.07.10 ~ 21.07.16 | Multi-Thread | 슈의 얼려먹는 초코 만들기 게임 | 🍫 | [이동](./4주차/MultiThreadGame/readme.md) |
 | 5주차 | 21.07.17 ~ 21.07.23 | Network Intro & API | 강아지 산책 App | 🐕 | [이동](./5주차/PetWalk/readme.md) |
-| 6주차 | 21.07.24 ~ 21.07.30 | Token & Restful | 라이징 테스트를 위해 <br> '모듈화 작업' 및 'API 엮기' 공부 |  | [이동](./6주차//readme.md) |
+| 6주차 | 21.07.24 ~ 21.07.30 | Token & Restful | 라이징 테스트를 위해 <br> '모듈화 작업' 및 'API 엮기' 공부 |  | [이동](./6주차/readme.md) |
 
