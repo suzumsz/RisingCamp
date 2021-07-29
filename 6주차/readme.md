@@ -9,7 +9,7 @@
 | 1 | Kakao Social Login | 👍🏻 |
 | 2 | Naver Social Login | 👍🏻 |
 | 3 | FaceBook Social Login | 👍🏻 |
-| 4 | Google Social Login |  |
+| 4 | Google Social Login | 👍🏻 |
 
 ### 2. 기능
 | 번호 | 주제 | 과제 달성도 |
