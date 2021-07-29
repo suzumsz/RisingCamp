@@ -21,7 +21,7 @@
 | 5 | Delegate(파일숙지) |  |
 | 6 | Notification Center |  |
 | 7 | CollectionView |  |
-| 8 | TableView |  |
+| 8 | TableView | 👍🏻 |
 | 8 | 사진 & datePicker & TextView 등 |  |
 | 10 | userDefault |  |
 | 11 | 지도 API, templete 사용해보기 |  |
