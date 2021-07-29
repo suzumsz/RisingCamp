@@ -10,6 +10,7 @@
 | 2 | Naver Social Login | 👍🏻 |
 | 3 | FaceBook Social Login | 👍🏻 |
 | 4 | Google Social Login | 👍🏻 |
+| 5 | NaverMapAPI |  |
 
 ### 2. 기능
 | 번호 | 주제 | 과제 달성도 |
@@ -24,7 +25,7 @@
 | 8 | TableView | 👍🏻 |
 | 8 | 사진 & datePicker & TextView 등 |  |
 | 10 | userDefault |  |
-| 11 | 지도 API, templete 사용해보기 |  |
+| 11 | templete 사용해보기 | 👍🏻 |
 
 
 
