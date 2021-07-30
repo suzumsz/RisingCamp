@@ -26,7 +26,7 @@
 | 9 | 사진 & datePicker & TextView 등 |  |
 | 10 | userDefault |  |
 | 11 | templete 사용해보기 | 👍🏻 |
-| 12 | tableView 무한 스크롤 |🏻 |
+| 12 | tableView 무한 스크롤 |  |
 
 
 
