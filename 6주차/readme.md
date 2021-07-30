@@ -18,7 +18,7 @@
 | 1 | 상단 탭 바 | 👍🏻 |
 | 2 | API 연동 |  |
 | 3 | 테이블뷰 안에 컬렉션뷰 클릭시 화면전환 | 👍🏻 |
-| 4 | Controller안에 Controller | 👍🏻 |
+| 4 | Controller안에 Controller |  |
 | 5 | Delegate(파일숙지) |  |
 | 6 | Notification Center |  |
 | 7 | CollectionView | 👍🏻 |
