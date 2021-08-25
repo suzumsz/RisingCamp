@@ -1,6 +1,6 @@
 # Rising Camp 1기 🏕 
 > 캠프 시작 : 21.06.19 ~    
-> 기간 : 총 2달 동안 진행
+> 기간 : 총 2달 동안 진행 
 
 <img width="100%" src="./etc/라이징캠프.png">
 
@@ -16,7 +16,7 @@
 | 7주차 | Rising Test | 프론트엔드, 백엔드 실전 프로젝트(Rising Test) 진행 |
 | 8주차 | Rising Test | 프론트엔드, 백엔드 실전 프로젝트(Rising Test) 진행 |
 
-`🔥 RisingTest 통과 후 수료 가능`
+`🔥 RisingTest 통과해야 수료 가능`
 
 ## 📌 주차별 진행 상황
 | 주차 | 날짜 | 커리큘럼 | 과제 | 수행 여부 |  리드미 이동 |   
