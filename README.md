@@ -27,8 +27,8 @@
 | 4주차 | 21.07.10 ~ 21.07.16 | Multi-Thread | 슈의 얼려먹는 초코 만들기 게임 | 🍫 | [이동](./4주차/MultiThreadGame/readme.md) |
 | 5주차 | 21.07.17 ~ 21.07.23 | Network Intro & API | 강아지 산책 App | 🐕 | [이동](./5주차/PetWalk/readme.md) |
 | 6주차 | 21.07.24 ~ 21.07.30 | Token & Restful | 라이징 테스트를 위해 <br> '모듈화 작업' 및 'API 엮기' 공부 | 📖 | [이동](./6주차/readme.md) |
-| 7주차 | 21.07.31 ~ 21.08.06 | Rising Test | 프론트엔드, 백엔드 <br> 실전 프로젝트 진행 | 🏕 | [이동](./7주차/readme.md) |
-| 8주차 | 21.08.07 ~ 21.08.13 | Rising Test | 프론트엔드, 백엔드 <br> 실전 프로젝트 진행 | 🏕 | [이동](./8주차/readme.md) |
+| 7주차 | 21.07.31 ~ 21.08.06 | Rising Test | 프론트엔드, 백엔드 <br> 실전 프로젝트 진행 | 🏕 | [이동](https://github.com/mock-rc1/Yogiyo_test_iOS_Flora) |
+| 8주차 | 21.08.07 ~ 21.08.13 | Rising Test | 프론트엔드, 백엔드 <br> 실전 프로젝트 진행 | 🏕 | [이동](https://github.com/mock-rc1/Yogiyo_test_iOS_Flora) |
 
 ## 📌 수료 발표 및 일정
 
